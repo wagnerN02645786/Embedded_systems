@@ -1,0 +1,8 @@
+--cpu Cortex-M0+
+".\inputsys.o"
+".\startup_mkl25z4.o"
+".\system_mkl25z4.o"
+--strict --scatter ".\inputsys.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\inputsys.map" -o .\inputsys.axf
